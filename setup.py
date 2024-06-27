@@ -84,10 +84,18 @@ if not isFile("README.md"):
         f.write(f"""# {project}
 
 ### TODO:
-- [] 
+- []
 
 ### Licence
 
 This code is licensed under the terms of the MIT Licence (see LICENCE for details).
 
+""")
+
+if not isFile("pyrightconfig.json"):
+    with open("pyrightconfig.json", "w") as f:
+        f.write(f"""{
+    "venvPath": ".",
+    "venv": "venv/"
+}
 """)
