@@ -94,8 +94,8 @@ This code is licensed under the terms of the MIT Licence (see LICENCE for detail
 
 if not isFile("pyrightconfig.json"):
     with open("pyrightconfig.json", "w") as f:
-        f.write(f"""{
+        f.write(f"""{{
     "venvPath": ".",
     "venv": "venv/"
-}
+}}
 """)
